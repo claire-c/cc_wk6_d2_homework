@@ -77,4 +77,9 @@ public class LibraryTest {
         assertEquals(1, myLibrary.countGenreTotals(Genre.THRILLER));
     }
 
+    @Test
+    public void genreTotalIsZero(){
+        assertEquals(0, myLibrary.countGenreTotals(Genre.THRILLER));
+    }
+
 }
