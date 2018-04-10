@@ -13,16 +13,19 @@ public class Library {
     public int bookCount(){
         return books.size();
     }
-
-    public void addBook(Book bookToAdd){
-        books.add(bookToAdd);
-    }
-
     public boolean checkCapacity(){
         if (bookCount() >= this.capacity){
-                return false;
+            return false;
         }   else {return true;}
     }
+
+    public void addBook(Book bookToAdd) {
+        if (checkCapacity()) {
+            books.add(bookToAdd);
+        } else {}
+    }
+
+
 
 
 }
