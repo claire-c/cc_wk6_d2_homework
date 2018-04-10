@@ -47,8 +47,8 @@ public class Library {
 
     public int countGenreTotals(Genre genreKey){
         int total = 0;
-        for (genreKey : genreList.keySet()) {
-            if(genreKey == genreList.keySet()){
+        for (Genre key : genreList.keySet()) {
+            if(genreKey == key){
                 total += 1;
             }
         }
