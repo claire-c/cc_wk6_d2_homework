@@ -32,7 +32,11 @@ public class BorrowerTest {
 
 //    @Test
 //    public void canBorrowBook(){
-//
+//        myLibrary.addBook(book1);
+//        myLibrary.addBook(book2);
+//        myLibrary.addBook(book3);
+//        bookBorrower.borrowBook(myLibrary);
+//        assertEquals(0,0)
 //    }
 
 }

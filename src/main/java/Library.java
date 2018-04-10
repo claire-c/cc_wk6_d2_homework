@@ -25,6 +25,15 @@ public class Library {
         } else {}
     }
 
+    public Book removeBook() {
+        Book removedBook = null;
+        if (bookCount() > 0) {
+            removedBook = books.remove(0);
+        } else {
+        }
+        return removedBook;
+    }
+
 
 
 

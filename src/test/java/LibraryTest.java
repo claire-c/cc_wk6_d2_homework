@@ -46,6 +46,20 @@ public class LibraryTest {
         assertFalse(myLibrary.checkCapacity());
     }
 
+    @Test
+    public void canRemoveBook(){
+        myLibrary.addBook(book1);
+        myLibrary.addBook(book2);
+        myLibrary.addBook(book3);
+        myLibrary.removeBook();
+        assertEquals(2, myLibrary.bookCount());
+    }
+
+    @Test
+    public void cannotRemoveBook(){
+        assertEquals(0, myLibrary.bookCount());
+    }
+
 
 
 }
