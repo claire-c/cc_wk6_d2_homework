@@ -60,6 +60,17 @@ public class LibraryTest {
         assertEquals(0, myLibrary.bookCount());
     }
 
+    @Test
+    public void canCountGenreList(){
+        assertEquals(0, myLibrary.countGenreList());
+    }
+
+    @Test
+    public void canAddBookToGenreList(){
+        myLibrary.addBookToGenreList(book1);
+        assertEquals(1, myLibrary.countGenreList());
+    }
+
 
 
 }
