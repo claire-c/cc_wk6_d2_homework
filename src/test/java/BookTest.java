@@ -34,4 +34,10 @@ public class BookTest {
     public void canGetGenre(){
         assertEquals(Genre.THRILLER, book1.getGenre());
     }
+
+    @Test
+    public void canGetGenreDescription(){
+        Genre genre = book1.getGenre();
+        assertEquals("Lots of twists and turns.", genre.getDescription());
+    }
 }
