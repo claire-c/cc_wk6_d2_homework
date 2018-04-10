@@ -12,4 +12,8 @@ public class Library {
         return books.size();
     }
 
+    public void addBook(Book bookToAdd){
+        books.add(bookToAdd);
+    }
+
 }
