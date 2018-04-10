@@ -25,4 +25,14 @@ public class BorrowerTest {
         assertEquals("Claire",bookBorrower.getName());
     }
 
+    @Test
+    public void canCountBorrowedBooks(){
+        assertEquals(0, bookBorrower.countBorrowedBooks());
+    }
+
+//    @Test
+//    public void canBorrowBook(){
+//
+//    }
+
 }
