@@ -11,9 +11,9 @@ public class BookTest {
 
     @Before
     public void before(){
-        book1 = new Book("Michael Crichton", "Jurassic Park");
-        book2 = new Book("Stephen King", "It");
-        book3 = new Book("Ray Bradbury", "Fahrenheit 451");
+        book1 = new Book("Michael Crichton", "Jurassic Park", Genre.THRILLER);
+        book2 = new Book("Stephen King", "It", Genre.HORROR);
+        book3 = new Book("Ray Bradbury", "Fahrenheit 451", Genre.SCI_FI);
     }
 
     @Test
@@ -30,4 +30,8 @@ public class BookTest {
         assertEquals("Fahrenheit 451", book3.getTitle());
     }
 
+    @Test
+    public void canGetGenre(){
+        assertEquals(Genre.THRILLER, book1.getGenre());
+    }
 }
