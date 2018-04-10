@@ -18,16 +18,16 @@ public class BookTest {
 
     @Test
     public void canGetAuthor(){
-        assertEquals("Michael Crichton",book1.author());
-        assertEquals("Stephen King",book2.author());
-        assertEquals("Ray Bradbury",book3.author());
+        assertEquals("Michael Crichton",book1.getAuthor());
+        assertEquals("Stephen King",book2.getAuthor());
+        assertEquals("Ray Bradbury",book3.getAuthor());
     }
 
-//    @Test
-//    public void canGetTitle(){
-//        assertEquals("Jurassic Park", book1.title());
-//        assertEquals("It", book2.title());
-//        assertEquals("Fahrenheit 451", book3.title());
-//    }
+    @Test
+    public void canGetTitle(){
+        assertEquals("Jurassic Park", book1.getTitle());
+        assertEquals("It", book2.getTitle());
+        assertEquals("Fahrenheit 451", book3.getTitle());
+    }
 
 }
