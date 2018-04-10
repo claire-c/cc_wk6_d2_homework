@@ -45,6 +45,16 @@ public class Library {
         genreList.put(bookToAdd.getGenre(), bookToAdd);
     }
 
+    public int countGenreTotals(Genre genreKey){
+        int total = 0;
+        for (genreKey : genreList.keySet()) {
+            if(genreKey == genreList.keySet()){
+                total += 1;
+            }
+        }
+        return total;
+    }
+
 
 
 

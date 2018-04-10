@@ -71,6 +71,10 @@ public class LibraryTest {
         assertEquals(1, myLibrary.countGenreList());
     }
 
-
+    @Test
+    public void canCountGenreTotals(){
+        myLibrary.addBookToGenreList(book1);
+        assertEquals(1, myLibrary.countGenreTotals(Genre.THRILLER));
+    }
 
 }
